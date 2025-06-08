@@ -1,0 +1,129 @@
+<!DOCTYPE html >
+<html lang="en" >
+<head >
+<meta charset="UTF-8" / >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/ >
+<title > StumbleDark - Content Creator Sign Up</title >
+<style >
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+}
+
+h1 {
+    color: #00ffcc;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px #000;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #00ffc8;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+    input[type="radio"] {
+        width: auto;
+        margin-right: 8px;
+    }
+
+    input[type="file"] {
+        background-color: #fff;
+    }
+
+button {
+    background-color: #00ffc8;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    button:hover {
+        background-color: #00b89d;
+    }
+
+.note {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: -12px;
+    margin-bottom: 15px;
+}
+
+</style >
+</head >
+<body >
+
+<h1 > Join as a StumbleDark Content Creator</h1 >
+
+<form action="https://formsubmit.co/youremail@example.com" method="POST" enctype="multipart/form-data" >
+<input type="hidden" name="_captcha" value="false" >
+<input type="hidden" name="_next" value="https://yourdomain.com/thanks.html" >
+
+<label for="channelName" > Channel Name:</label >
+<input type="text" name="channelName" id="channelName" required >
+
+<label for="platform" > Social Media Platform:</label >
+<select name="platform" id="platform" required >
+<option value="" > -- Select --</option >
+<option value="tiktok" > TikTok</option >
+<option value="twitch" > Twitch</option >
+<option value="youtube" > YouTube</option >
+<option value="twitter" > Twitter</option >
+</select >
+
+<label for="followers" > Followers/Subscribers:</label >
+<input type="number" name="followers" id="followers" min="500" required >
+<div class="note" > Minimum 500 required</div >
+
+<label for="screenshot" > Upload Screenshot (Proof of Channel):</label >
+<input type="file" name="screenshot" id="screenshot" accept="image/*" required >
+
+<label > Do you upload at least 1 content per week?</label >
+<input type="radio" name="frequency" value="yes" required > Yes
+<input type="radio" name="frequency" value="no" > No
+
+<label for="fullname" > Full Name:</label >
+<input type="text" name="fullname" id="fullname" required >
+
+<label for="age" > Age:</label >
+<input type="number" name="age" id="age" min="10" required >
+<div class="note" > Minimum age is 10 years</div >
+
+<label for="reason" > Why do you want to become a StumbleDark content creator?</label >
+<textarea name="reason" id="reason" rows="5" required > </textarea >
+
+<button type="submit" > Submit Application</button >
+</form >
+
+</body >
+</html >
